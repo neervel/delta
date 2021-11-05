@@ -7,10 +7,17 @@
     height: 100%
     width: 100%
     z-index: -1
-    background-image: url('../assets/video/main-bg.gif') 
-    background-color: rgba(0, 0, 0, .6)
-    background-blend-mode: color 
-    background-position: center
+    overflow: hidden
+    display: flex
+    align-items: center
+    justify-content: center
+    &::after
+      position: absolute
+      height: 100%
+      width: 100%
+      content: ""
+      background-color: rgba(0, 0, 0, .6)
+      top: 0
   &-block
     display: flex
     align-items: center

@@ -1,0 +1,46 @@
+.cards
+  margin-top: 200px
+  &-item
+    height: 100vh
+    width: 100%
+    margin-bottom: 50vh
+  &__title
+    font-weight: 300
+    font-size: 32px
+    text-transform: uppercase
+    line-height: 1.2
+    margin-bottom: 40px
+    max-width: 470px
+  &__text
+    font-weight: 400
+    font-size: 18px
+    max-width: 470px
+  &__img
+    display: block
+    height: 100px
+    width: 100px
+    margin-top: 200px
+    margin-left: auto
+    margin-right: 0
+    & img
+      height: 100%
+      width: 100%
+  @media screen and ( max-width: 768px )
+    margin-top: 100px
+    &__title
+      font-size: 24px
+      margin-bottom: 20px
+      max-width: 400px
+    &__text
+      margin-bottom: 16px
+      max-width: 400px
+    &__img
+      height: 70px
+      width: 70px
+      margin-top: 150px
+  @media screen and ( max-width: 640px )
+    &__title
+      max-width: 300px
+    &__text
+      max-width: 300px
+    

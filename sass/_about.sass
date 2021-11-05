@@ -1,0 +1,73 @@
+.about
+  width: 1320px
+  background-color: $green-dark
+  margin: 0 auto
+  margin-top: -150px
+  &-block
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 60px
+  &-card
+    display: flex
+    flex-direction: column
+    align-items: center
+    font-size: 18px
+    &__img
+      height: 180px
+      display: flex
+      align-items: center
+      justify-content: center
+      margin-bottom: 15px
+      & img
+        max-height: 100%
+        max-width: 100%
+  @media screen and ( max-width: 1350px )
+    width: 1000px
+  @media screen and ( max-width: 1080px )
+    width: 740px
+    margin-top: -50px
+    &-block
+      padding: 20px
+    &-card
+      font-size: 15px
+      margin: 0 5px
+      &__img
+        height: 130px
+        width: 120px
+  @media screen and ( max-width: 768px )
+    width: 100%
+    margin-top: 0
+    &-block
+      flex-direction: column
+      align-items: start
+      width: 600px
+      margin: 0 auto
+      padding: 20px 0
+    &-card
+      flex-direction: row
+      margin-bottom: 30px
+      &:last-child
+        margin-bottom: 0
+      &__img
+        margin-right: 20px
+        margin-bottom: 0
+        width: 150px
+  @media screen and ( max-width: 640px )
+    &-block
+      width: 420px
+  @media screen and ( max-width: 480px )
+    &-block
+      align-items: center
+      width: 90%
+    &-card
+      flex-direction: column
+      text-align: center
+      margin-bottom: 40px
+      &__img
+        margin-bottom: 20px
+        margin-right: 0
+        width: 100px
+    
+
+

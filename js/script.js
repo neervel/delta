@@ -1,4 +1,6 @@
 $(function() {
+  new WOW().init()
+  
   const closeVideo = $('.video-close')
   const openVideo = $('#openVideo')
   const videoPopup = $('.video')

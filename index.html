@@ -35,7 +35,11 @@
     </div>
   </div>
   <div class="hero">
-    <div class="hero-bg"></div>
+    <div class="hero-bg">
+      <video autoplay muted loop preload="auto" poster="./assets/img/video-bg.png">
+        <source src="./assets/video/main-bg.mp4" type="video/mp4">
+      </video>
+    </div>
     <div class="container">
       <header class="header">
         <div class="header-logo">
@@ -83,13 +87,46 @@
       </div>
     </div>
   </div>
+  <div class="cards">
+    <div class="container">
+      <div class="cards-item wow fadeInLeft" data-wow-offset="300">
+        <h2 class="cards__title">«Delta Tioga Pass»</h2>
+        <p class="cards__text">Cемейство высокопроизводительных серверов «Tioga Pass» Delta Solutions в форм-факторе OCP 2 OU на базе процессоров Intel® Xeon® Scalable – основа энергоэффективных и экономичных ЦОД.</p>
+        <a href="https://www.intel.ru/content/www/ru/ru/products/details/processors/xeon/scalable/platinum.html" class="cards__img"><img src="./assets/img/xeon-platinum.png" alt="Intel Xeon Platinum"></a>
+      </div>
+      <div class="cards-item wow fadeInLeft" data-wow-offset="300">
+        <h2 class="cards__title">Установка до 12 модулей оперативной памяти</h2>
+        <p class="cards__text">В «Tioga Pass» Delta Solutions в форм-факторе OCP 2 OU возможно установить до 12 модулей оперативной памяти DDR4 частотой 2933, 2666 или 2400 МГц общей емкостью до 3 ТБ</p>
+        <a href="https://www.intel.ru/content/www/ru/ru/products/details/processors/xeon/scalable/platinum.html" class="cards__img"><img src="./assets/img/xeon-platinum.png" alt="Intel Xeon Platinum"></a>
+      </div>
+      <div class="cards-item wow fadeInLeft" data-wow-offset="300">
+        <h2 class="cards__title">Два процессора Intel® Xeon® Scalable</h2>
+        <p class="cards__text">В «Tioga Pass» Delta Solutions в форм-факторе OCP 2 OU возможно установить до двух процессоров Intel® Xeon® Scalable 1-го или 2-го поколений мощностью до 165 Вт</p>
+        <a href="https://www.intel.ru/content/www/ru/ru/products/details/processors/xeon/scalable/platinum.html" class="cards__img"><img src="./assets/img/xeon-platinum.png" alt="Intel Xeon Platinum"></a>
+      </div>
+    </div>
+  </div>
+  <div class="slider">
+    <div class="container">
+      <div class="slider-block">
+        <h2 class="slider__title">Модификации</h2>
+        <div class="pagination"></div>
+        <div class="slider-slides slick-slider">
+
+        </div>
+        <p class="slider__text_scnd">Intel, логотип Intel, Intel Xeon, логотип Intel Xeon и логотип Intel Inside являются товарными знаками корпорации Intel в США и/или других странах.<br>* Другие наименования и товарные знаки являются собственностью своих законных владельцев.</p>
+      </div>
+    </div>
+  </div>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="https://vjs.zencdn.net/7.15.4/video.min.js"></script>
-  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
   <script src="./js/script.js"></script>
+
 </body>
 
 </html>
