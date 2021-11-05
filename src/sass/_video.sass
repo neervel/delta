@@ -1,0 +1,38 @@
+.video
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 999
+  display: none
+  &-close
+    position: absolute
+    top: 50px
+    right: 50px
+    font-size: 24px
+    cursor: pointer
+  &-block
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 100vh
+    width: 100vw
+    background: rgba(0, 0, 0, .8)
+  &-container 
+    max-height: 500px
+    & .my-video-dimensions
+      height: 500px !important
+      width: 890px
+      @media screen and ( max-width: 1080px )
+        height: 350px !important
+        width: 623px
+      @media screen and ( max-width: 768px )
+        height: 250px !important
+        width: 445px
+      @media screen and ( max-width: 480px )
+        height: 150px !important
+        width: 267px
+    & .vjs-big-play-button
+      left: 50%
+      top: 50%
+      transform: translateX(-50%) translateY(-50%)
+  

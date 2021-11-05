@@ -1,0 +1,38 @@
+.header
+  display: flex
+  align-items: end
+  justify-content: space-between
+  padding-top: 30px
+  &-logo
+    &__img
+      height: 50px
+      width: auto
+    &__text
+      display: block
+      text-transform: uppercase
+      font-size: 22px
+      font-weight: 300
+      line-height: 1
+  &-nav
+    & ul
+      display: flex
+      align-items: center
+      list-style: none
+      margin: 0
+      & li
+        text-transform: uppercase
+        margin-right: 25px
+        font-size: 14px
+        &:last-child
+          margin-right: 0
+  @media screen and ( max-width: 768px )
+    flex-direction: column
+    align-items: start
+    &-logo
+      margin-bottom: 15px
+      &__img
+        height: 30px
+      &__text
+        font-size: 18px
+
+    

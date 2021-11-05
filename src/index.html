@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delta Tioga</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="./assets/icon/logo-small.svg" type="image/x-icon">
+</head>
+
+<body>
+  <div class="video">
+    <div class="video-close">✕</div>
+    <div class="video-block">
+      <div class="video-container">
+        <video 
+          id="my-video" 
+          class="video-js" 
+          controls 
+          preload="auto" 
+          poster="./assets/img/video-bg.png" 
+          data-setup="{}"
+        >
+          <source src="./assets/video/main.mp4" type="video/mp4" />
+          
+          <p class="vjs-no-js">
+            To view this video please enable JavaScript, and consider upgrading to a
+            web browser that
+            <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+          </p>
+        </video>
+      </div>
+    </div>
+  </div>
+  <div class="hero">
+    <div class="hero-bg">
+
+    </div>
+    <div class="container">
+      <header class="header">
+        <div class="header-logo">
+          <img src="./assets/icon/logo.svg" alt="Delta solutions" class="header-logo__img">
+          <span class="header-logo__text">Системный Интегратор</span>
+        </div>
+        <nav class="header-nav">
+          <ul>
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Решения </a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="hero-block">
+        <div class="hero-text">
+          <h1 class="hero__title">OCP сервер<br>Delta Solutions «Tioga Pass»<br>на базе процессоров Intel® Xeon®<br>1-го
+            и 2-го поколений</h1>
+          <h3 class="hero__subtitle">Профессиональная деятельность на новом уровне</h3>
+        </div>
+        <button class="hero__btn" id="openVideo">Посмотреть видео</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://vjs.zencdn.net/7.15.4/video.min.js"></script>
+  
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
