@@ -104,6 +104,7 @@ a:hover::after {
   background-image: url("../assets/video/main-bg.gif");
   background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: color;
+  background-position: center;
 }
 
 .hero-block {
@@ -203,6 +204,10 @@ a:hover::after {
   }
   .header-logo__text {
     font-size: 18px;
+  }
+  .header-nav ul li {
+    margin-right: 10px;
+    text-transform: none;
   }
 }
 
