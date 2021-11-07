@@ -24,6 +24,8 @@ $(function () {
     dots: true,
     nextArrow: '.next',
     prevArrow: '.prev',
+    fade: true,
+    speed: 500,
     appendDots: '.slider-pagination',
     customPaging: function (slick, index) {
       return '<a>' + (index + 1) + '</a>';
