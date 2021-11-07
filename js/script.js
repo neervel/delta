@@ -1,6 +1,6 @@
-$(function() {
+$(function () {
   new WOW().init()
-  
+
   const closeVideo = $('.video-close')
   const openVideo = $('#openVideo')
   const videoPopup = $('.video')
@@ -16,6 +16,17 @@ $(function() {
     if ($(event.target).hasClass('video-block')) {
       videoPopup.fadeOut()
       $('video')[0].pause()
+    }
+  })
+
+  $('.slick-slider').slick({
+    infinite: false,
+    dots: true,
+    nextArrow: '.next',
+    prevArrow: '.prev',
+    appendDots: '.slider-pagination',
+    customPaging: function (slick, index) {
+      return '<a>' + (index + 1) + '</a>';
     }
   })
 })
