@@ -1,0 +1,40 @@
+.feedback
+  margin-bottom: 100px
+  &-block
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__text
+    width: 480px 
+  &__title
+    font-size: 32px
+    font-weight: 300
+    margin-bottom: 45px
+    max-width: 480px
+    text-transform: uppercase
+    line-height: 42px
+  &__subtitle
+    font-size: 18px
+    max-width: 450px
+    line-height: 30px
+  &__form
+    display: grid
+    grid-template-columns: 300px 300px
+    grid-gap: 20px
+    & input
+      height: 54px
+      padding: 17px 20px
+      font-size: 16px
+      color: $gray-dark
+    & input:nth-child(5)
+      grid-column: 1/3
+    &-text
+      font-size: 14px
+      & a 
+        text-decoration: underline
+    & button
+      padding: 15px 55px
+      margin-right: 0
+      margin-left: auto
+      display: block
+      border-radius: 0
