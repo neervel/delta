@@ -53,3 +53,35 @@
       margin-bottom: 10px
     & a
       margin-bottom: 10px
+  @media screen and ( max-width: 1080px )
+    &-block
+      display: grid
+      grid-template-columns: 1fr 1fr
+      grid-row-gap: 20px
+      padding-bottom: 30px
+    &-links
+      width: fit-content !important
+      grid-column: 1/2
+      &__header
+        margin-bottom: 20px
+      & ul 
+        display: none
+    &-logo
+      margin: 0 auto      
+      grid-column: 2/3
+      grid-row: 1/4
+  @media screen and ( max-width: 480px )
+    &-block
+      display: flex
+      flex-direction: column
+      align-items: center
+      text-align: center
+      padding-top: 30px
+      padding-bottom: 20px
+    &-links
+      &:nth-child(3)
+        align-items: center
+    &-logo
+      order: -1
+
+

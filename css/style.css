@@ -909,3 +909,44 @@ a {
 .footer-logo a {
   margin-bottom: 10px;
 }
+
+@media screen and (max-width: 1080px) {
+  .footer-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 20px;
+    padding-bottom: 30px;
+  }
+  .footer-links {
+    width: fit-content !important;
+    grid-column: 1/2;
+  }
+  .footer-links__header {
+    margin-bottom: 20px;
+  }
+  .footer-links ul {
+    display: none;
+  }
+  .footer-logo {
+    margin: 0 auto;
+    grid-column: 2/3;
+    grid-row: 1/4;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .footer-links:nth-child(3) {
+    align-items: center;
+  }
+  .footer-logo {
+    order: -1;
+  }
+}
