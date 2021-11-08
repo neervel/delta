@@ -38,3 +38,51 @@
       margin-left: auto
       display: block
       border-radius: 0
+  @media screen and ( max-width: 1280px )
+    &__text
+      margin-right: 100px
+    &__form
+      grid-template-columns: 250px 250px
+  @media screen and ( max-width: 1080px )
+    &-block
+      flex-direction: column
+      align-items: start
+    &__title
+      margin-bottom: 20px
+    &__text
+      margin-right: 0
+      margin-bottom: 40px
+    &__form
+      grid-template-columns: 1fr 1fr
+  @media screen and ( max-width: 640px )
+    &__text
+      width: 100%
+    &__title
+      width: 100%
+    &__subtitle
+      width: 100%
+    &__form
+      display: flex
+      flex-direction: column
+      width: 100%
+      &-text 
+        order: 2
+      &-btn
+        margin-top: 20px
+        & button
+          width: 100%
+  @media screen and ( max-width: 480px )
+    &__title
+      font-size: 24px
+      line-height: 30px
+      margin-bottom: 10px
+    &__subtitle
+      font-size: 16px
+      line-height: 22px
+    &__form
+      & input 
+        font-size: 16px
+        height: 50px
+        padding: 0 15px
+      &:no-button
+        margin-top: 10px
