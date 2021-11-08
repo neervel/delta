@@ -31,4 +31,8 @@ $(function () {
       return '<a>' + (index + 1) + '</a>';
     }
   })
+
+  $('#feedback').submit(function(e) {
+    e.preventDefault();
+  })
 })
