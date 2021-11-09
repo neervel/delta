@@ -393,8 +393,22 @@ a {
   }
 }
 
+.animation {
+  height: 400vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.animation canvas {
+  position: sticky;
+  top: 0;
+}
+
 .cards {
   margin-top: 200px;
+  position: relative;
 }
 
 .cards-item {
