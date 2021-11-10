@@ -139,6 +139,7 @@ a {
   .hero-block {
     flex-direction: column;
     align-items: start;
+    margin-bottom: 100px;
   }
   .hero__title {
     margin-bottom: 20px;
@@ -352,6 +353,7 @@ a {
   .about {
     width: 100%;
     margin-top: 0;
+    position: relative;
   }
   .about-block {
     flex-direction: column;
@@ -408,11 +410,25 @@ a {
 
 .animation canvas {
   position: sticky;
-  top: 0;
+  top: 20vh;
   width: 100%;
 }
 
-.cards {
+@media screen and (max-width: 768px) {
+  .animation canvas {
+    width: 120%;
+    margin-left: -10%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .animation canvas {
+    width: 140%;
+    margin-left: -20%;
+  }
+}
+
+.cards .container {
   padding-top: 500px;
   padding-bottom: 50vh;
   position: relative;
@@ -425,7 +441,6 @@ a {
 }
 
 .cards-item:last-child {
-  height: 150vh;
   margin-bottom: 0;
 }
 
@@ -462,6 +477,9 @@ a {
   .cards {
     margin-top: 100px;
   }
+  .cards-item {
+    margin-bottom: 20vh;
+  }
   .cards__title {
     font-size: 24px;
     margin-bottom: 20px;
@@ -479,6 +497,9 @@ a {
 }
 
 @media screen and (max-width: 640px) {
+  .cards-item {
+    margin-bottom: 0;
+  }
   .cards__title {
     max-width: 300px;
   }

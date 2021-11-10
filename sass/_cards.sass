@@ -1,13 +1,13 @@
 .cards
-  padding-top: 500px
-  padding-bottom: 50vh
-  position: relative
+  & .container
+    padding-top: 500px
+    padding-bottom: 50vh
+    position: relative
   &-item
     height: 100vh
     width: 100%
     margin-bottom: 50vh
     &:last-child
-      height: 150vh
       margin-bottom: 0
   &__title
     font-weight: 300
@@ -32,6 +32,8 @@
       width: 100%
   @media screen and ( max-width: 768px )
     margin-top: 100px
+    &-item
+      margin-bottom: 20vh
     &__title
       font-size: 24px
       margin-bottom: 20px
@@ -44,6 +46,8 @@
       width: 70px
       margin-top: 150px
   @media screen and ( max-width: 640px )
+    &-item
+      margin-bottom: 0
     &__title
       max-width: 300px
     &__text
