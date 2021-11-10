@@ -37,6 +37,7 @@ $(function () {
   })
 
   const html = document.documentElement;
+  const animation = document.getElementsByClassName('animation')[0]
   const canvas = document.getElementById("animation");
   const context = canvas.getContext("2d");
 
@@ -57,22 +58,28 @@ $(function () {
   canvas.width = 1250;
   canvas.height = 750;
   img.onload = function () {
+    context.fillStyle = "#002430";
+    context.fillRect(0, 0, canvas.width, canvas.height);
     context.drawImage(img, 0, 0);
   }
 
   const updateImage = index => {
+    context.fillStyle = "#002430";
+    context.fillRect(0, 0, canvas.width, canvas.height);
     img.src = currentFrame(index);
     context.drawImage(img, 0, 0);
   }
 
   window.addEventListener('scroll', () => {
     const scrollTop = html.scrollTop;
-    const maxScrollTop = html.scrollHeight - window.innerHeight;
+    const maxScrollTop = animation  .scrollHeight;
     const scrollFraction = scrollTop / maxScrollTop;
+    // console.log(scrollTop, maxScrollTop)
     const frameIndex = Math.min(
       frameCount - 1,
       Math.ceil(scrollFraction * frameCount)
     );
+    console.log(frameIndex)
 
     requestAnimationFrame(() => updateImage(frameIndex + 1))
   });

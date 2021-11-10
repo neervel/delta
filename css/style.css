@@ -290,7 +290,11 @@ a {
   width: 1320px;
   background-color: #023647;
   margin: 0 auto;
-  margin-top: -150px;
+  position: absolute;
+  z-index: 9;
+  top: 85%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .about-block {
@@ -394,20 +398,23 @@ a {
 }
 
 .animation {
-  height: 400vh;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
+  z-index: -1;
 }
 
 .animation canvas {
   position: sticky;
   top: 0;
+  width: 100%;
 }
 
 .cards {
-  margin-top: 200px;
+  padding-top: 500px;
+  padding-bottom: 50vh;
   position: relative;
 }
 
@@ -415,6 +422,11 @@ a {
   height: 100vh;
   width: 100%;
   margin-bottom: 50vh;
+}
+
+.cards-item:last-child {
+  height: 150vh;
+  margin-bottom: 0;
 }
 
 .cards__title {
