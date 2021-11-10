@@ -10,6 +10,7 @@
 body {
   background-color: #002430;
   color: #FFFFFF;
+  overflow-x: hidden;
 }
 
 button {
@@ -89,6 +90,10 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.hero-bg video {
+  height: 100%;
 }
 
 .hero-bg::after {
@@ -411,13 +416,15 @@ a {
 .animation canvas {
   position: sticky;
   top: 20vh;
-  width: 100%;
+  width: 140%;
+  margin-left: -20%;
 }
 
 @media screen and (max-width: 768px) {
   .animation canvas {
     width: 120%;
     margin-left: -10%;
+    top: 30vh;
   }
 }
 
@@ -425,6 +432,7 @@ a {
   .animation canvas {
     width: 140%;
     margin-left: -20%;
+    top: 40vh;
   }
 }
 
