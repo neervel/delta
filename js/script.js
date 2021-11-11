@@ -58,13 +58,10 @@ $(function () {
   canvas.width = 1250;
   canvas.height = 750;
   img.onload = function () {
-    context.fillStyle = "#002430";
-    context.fillRect(0, 0, canvas.width, canvas.height);
     context.drawImage(img, 0, 0);
   }
 
   const updateImage = index => {
-    // context.clearRect(0, 0, canvas.width, canvas.height)
     img.src = currentFrame(index);
     context.drawImage(img, 0, 0);
   }
