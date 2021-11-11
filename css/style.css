@@ -415,9 +415,9 @@ a {
 
 .animation canvas {
   position: sticky;
-  top: 10vh;
-  width: 140%;
-  margin-left: -20%;
+  top: 0;
+  width: 200%;
+  margin-left: -50%;
   margin-bottom: -100px;
 }
 
@@ -425,13 +425,6 @@ a {
   .animation canvas {
     top: 30vh;
     margin-bottom: 0;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .animation canvas {
-    width: 200%;
-    margin-left: -50%;
     top: 40vh;
   }
 }
@@ -510,9 +503,11 @@ a {
   }
   .cards__title {
     max-width: 300px;
+    font-size: 18px;
   }
   .cards__text {
     max-width: 300px;
+    font-size: 16px;
   }
 }
 
